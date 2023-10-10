@@ -1,26 +1,26 @@
-#logo{
+#logo {
     width: 12%;
     height: 12%;
     margin: 10px;
     padding: 10px;
 }
 
-#logocenter{
+#logocenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-header{
+header {
     background-color: #03213F;
 }
 
 
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -45,11 +45,11 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
- display: inline-block;
+    display: inline-block;
 }
 
-nav li:hover > a {
- background-color: #03213F;
+nav li:hover>a {
+    background-color: #03213F;
 }
 
 .dropdown-content {
@@ -58,7 +58,7 @@ nav li:hover > a {
     background-color: #03213F;
     top: 100%;
     /* left: 0; */
-     z-index: 1;
+    z-index: 1;
 }
 
 .dropdown-content li {
@@ -74,11 +74,11 @@ nav li:hover > a {
     display: block;
 }
 
-#navheadercolor{
+#navheadercolor {
     background-color: #1A9A9D;
 }
 
-#imgcenter{
+#imgcenter {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -86,10 +86,10 @@ nav li:hover > a {
     height: 50%;
 }
 
-footer{
+footer {
     background-color: #1A9A9D;
     text-decoration: none;
-    position: fixed; 
+    position: relative;
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -100,25 +100,25 @@ footer{
 footer ul {
     margin: 10;
     padding: 0px 15px;
-    
 
-  }
 
-footer li{
+}
+
+footer li {
     list-style-type: none
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     grid-auto-flow: row;
 }
 
-.items{
+.items {
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
-    
+
 
 }
