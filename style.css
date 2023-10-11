@@ -122,3 +122,46 @@ footer li {
 
 
 }
+
+form {
+    text-align: left;
+    width: 300px;
+    margin: 20px auto 0;
+}
+
+form label {
+    display: block;
+    width: 290;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+}
+
+form input {
+    display: block;
+    width: 290px;
+    padding: 5px;
+    margin: 0 0 10px;
+    border: none;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    cursor: pointer;
+
+}
+
+form input[type="submit"] {
+    background: #1A9A9D;
+    color: white;
+    cursor: pointer;
+    width: 300px;
+}
+
+.content {
+    border: solid wheat 20px;
+}
