@@ -117,8 +117,7 @@ nav li:hover > a {
 footer{
     background-color: #1A9A9D;
     text-decoration: none;
-    position: relative; 
-    bottom: 0;
+    position: absolute; 
     display: flex;
     flex-direction: column;
     width: 100%;
