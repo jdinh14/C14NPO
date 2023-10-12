@@ -26,7 +26,8 @@ body{
     padding: 0;
     background-color: #181A1B;
     background-image: url("stock.jpeg");
-    no-repeat center center fixed; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -115,13 +116,16 @@ nav li:hover > a {
 }
 
 footer{
+    bottom: 0;
     background-color: #1A9A9D;
     text-decoration: none;
-    position: absolute; 
+    position: relative; 
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
+    margin-bottom: auto;  
+    margin-top: auto;
 }
 
 footer ul {
@@ -192,5 +196,4 @@ margin-bottom: 0
     { nav a {
          font-size: 0.8rem;
          text-align: center;
-     }
-    
+     }}
