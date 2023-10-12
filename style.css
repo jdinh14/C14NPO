@@ -87,13 +87,15 @@ nav li:hover > a {
 }
 
 footer{
+    bottom: 0;
     background-color: #1A9A9D;
     text-decoration: none;
-    position: absolute; 
+    position: relative; 
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
+    margin-top: 65%;
 }
 
 footer ul {
