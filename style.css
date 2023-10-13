@@ -95,7 +95,7 @@ footer{
     flex-direction: column;
     width: 100%;
     text-align: center;
-    margin-top: 65%;
+    /* margin-top: 65%; */
 }
 
 footer ul {
@@ -130,3 +130,7 @@ main{animation: fadeIn 3s;}
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
+
+  footer section{
+    padding: 50px;
+}

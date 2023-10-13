@@ -5,6 +5,10 @@
     padding: 10px;
 }
 
+section{
+    padding: 50px;
+}
+
 #logocenter{
     display: flex;
     justify-content: center;
@@ -50,6 +54,7 @@ h1{ margin: 50px;
 p {
     margin-bottom: 20px; /* Or any other desired value */
     margin: 50px;
+
   }
 
  #margin{
@@ -173,7 +178,7 @@ margin-bottom: 0
     align-items: center;
     text-align: center;
     opacity: 0.9;
-    margin-bottom: 0
+    margin-bottom: 0;
     ;
     
     }
