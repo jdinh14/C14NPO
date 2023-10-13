@@ -1,4 +1,16 @@
-#logo{
+* {
+    margin: 0px;
+    padding: 0px;
+}
+    
+    html {
+    height: 100%;
+    width: 100%;
+}
+  
+  /* adjustments aboove ^^ */
+
+  #logo{
     width: 12%;
     height: 12%;
     margin: 10px;
@@ -78,6 +90,76 @@ nav li:hover > a {
     background-color: #1A9A9D;
 }
 
+  /* adjustments below HEREEE vv */ 
+  
+.maincontainer {
+width: 100vw;
+height: 100vh; 
+position: relative;
+display: inline-block;
+}
+
+.articlecontainer {
+display: grid;
+grid-template-columns: 75%;
+grid-template-rows: 200px;
+padding-top: 20px; 
+justify-content: center;
+}
+
+.healthcontainer 
+    {
+      animation: fadeinout 4s none;
+    }
+    
+    @keyframes fadeinout
+    {
+      0%{
+        opacity:0;
+      }
+      50%
+      {
+        opacity:1;
+      }
+      100%
+      {
+        opacity:1;
+      }
+    }
+
+#healthicon {
+display: block;
+margin: 0 auto;
+width:300px;
+margin-left: auto;
+margin-right: auto; 
+/* padding-top:70px;
+padding-bottom: 40px; */
+
+}
+
+.information {
+display: grid;
+}
+
+p {
+/* padding: 40px;  */
+color: #fff;
+/* text-align: center; */
+font-size: 19px;
+background-color: #1A9A9D;
+display: block; 
+width: 800px;
+height: 400px;
+margin-left: auto; 
+margin-right: auto;
+background: #1A9A9D;
+border: 2px solid #000;
+overflow: auto; 
+}
+
+/* STOP HERE */
+
 #imgcenter{
     display: block;
     margin-left: auto;
@@ -95,7 +177,6 @@ footer{
     flex-direction: column;
     width: 100%;
     text-align: center;
-    margin-top: 60%;
 }
 
 footer ul {
