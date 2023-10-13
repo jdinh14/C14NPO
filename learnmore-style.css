@@ -1,12 +1,20 @@
-#logo{
+* {
+    margin: 0px;
+    padding: 0px;
+}
+    
+    html {
+    height: 100%;
+    width: 100%;
+}
+  
+  /* adjustments aboove ^^ */
+
+  #logo{
     width: 12%;
     height: 12%;
     margin: 10px;
     padding: 10px;
-}
-
-footer section{
-    padding: 50px;
 }
 
 #logocenter{
@@ -29,37 +37,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #181A1B;
-    background-image: url("stock.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    
 }
-
-main{animation: fadeIn 3s;}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
-h1{ margin: 50px;
-}
-
-
-
-p {
-    margin-bottom: 20px; /* Or any other desired value */
-    margin: 50px;
-
-  }
-
- #margin{
-    margin: 50px;
- } 
 
 nav ul {
     padding: 0;
@@ -112,12 +90,82 @@ nav li:hover > a {
     background-color: #1A9A9D;
 }
 
-.imgcenter{
+  /* adjustments below HEREEE vv */ 
+  
+.maincontainer {
+width: 100vw;
+height: 100vh; 
+position: relative;
+display: inline-block;
+}
+
+.articlecontainer {
+display: grid;
+grid-template-columns: 75%;
+grid-template-rows: 200px;
+padding-top: 20px; 
+justify-content: center;
+}
+
+.healthcontainer 
+    {
+      animation: fadeinout 4s none;
+    }
+    
+    @keyframes fadeinout
+    {
+      0%{
+        opacity:0;
+      }
+      50%
+      {
+        opacity:1;
+      }
+      100%
+      {
+        opacity:1;
+      }
+    }
+
+#healthicon {
+display: block;
+margin: 0 auto;
+width:300px;
+margin-left: auto;
+margin-right: auto; 
+/* padding-top:70px;
+padding-bottom: 40px; */
+
+}
+
+.information {
+display: grid;
+}
+
+p {
+/* padding: 40px;  */
+color: #fff;
+/* text-align: center; */
+font-size: 19px;
+background-color: #1A9A9D;
+display: block; 
+width: 800px;
+height: 400px;
+margin-left: auto; 
+margin-right: auto;
+background: #1A9A9D;
+border: 2px solid #000;
+overflow: auto; 
+}
+
+/* STOP HERE */
+
+#imgcenter{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
-    height: 25%;
+    width: 50%;
+    height: 50%;
 }
 
 footer{
@@ -129,8 +177,8 @@ footer{
     flex-direction: column;
     width: 100%;
     text-align: center;
-    margin-bottom: auto;  
-    margin-top: auto;
+
+    
 }
 
 footer ul {
@@ -159,46 +207,13 @@ footer li{
 
 }
 
-#sectionwhite{
-background-color: #f1f1f1;
-margin: 10px;
-padding: 10px;
-opacity: 0.9;
-margin-bottom: 0
+main{animation: fadeIn 3s;}
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
+  footer section{
+    padding: 50px;
 }
-
-#sectionwhite2{
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0.9;
-    margin-bottom: 0;
-    
-    
-    }
-
-    @media (max-width: 420px)
-   { nav a {
-        font-size: 0.7rem;
-        text-align: center;
-    }}
-
-    @media (max-width: 343px)
-    { nav a {
-         font-size: 0.7rem;
-         text-align: center;
-     }
-    
-    }
-
-    @media (max-width: 375px)
-    { nav a {
-         font-size: 0.8rem;
-         text-align: center;
-     }}

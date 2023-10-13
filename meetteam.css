@@ -1,3 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+    
+    html {
+    height: 100%;
+    width: 100%;
+}
+  
 #logo{
     width: 12%;
     height: 12%;
@@ -77,6 +87,101 @@ nav li:hover > a {
 #navheadercolor{
     background-color: #1A9A9D;
 }
+
+/* CONTENT STARTS HERE*/
+
+/* #imgcenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+} */
+
+h1 {
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: #fff; 
+    padding: 20px;
+    margin-top: 180px;
+    margin-bottom: 10px;
+  font-size: 38px;
+  border-bottom: 1rem solid #fff;
+}
+
+/* jerry helped me here..  */
+.firstcontainer {
+/* width: 100vw;
+height: 100vh;  */
+position: relative;
+display: inline-block;
+}
+ 
+.imgcontainer {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+/* grid-template-columns: repeat(2, 1fr); */
+grid-template-rows: repeat(2, 1fr);
+align-items: center;
+grid-gap: 10px;
+padding-top:130px; 
+padding-left: 30px;
+/* width: 250;
+height: 400px; */
+}
+
+.imgcontainer img {
+  /* margin: auto;
+  display: block;
+  width: 195px;
+  height: 194px;
+  border-radius: 100%;
+  overflow: clip;
+  overflow-clip-margin: 0px; */
+  position: relative; 
+  width: 200px;
+  height: 200px; 
+  overflow: hidden; 
+  background: #32557f;
+  box-shadow: 12px 9px 0px #1A9A9D;
+}
+
+
+
+/* .imgcontainer:nth-child(even) {
+    box-shadow: 12px 9px 0px #fff;
+} */
+
+.imgcontainer p {
+    margin: 15px;
+    padding:10px;
+    font-size: 19px; 
+    font-weight: bold;
+    text-align: end;
+    text-align: center;
+    color: #fff; 
+
+}
+
+.imgcontainer p:nth-child(3) {
+    font-size: 14.5px; 
+    padding: 10px;
+    text-align: end;
+    background-color: #03213F;
+
+  }
+
+  .imgcontainer p:nth-child(4) {
+    font-size: 13px; 
+    padding: 10px;
+    text-align: end;
+    background-color: #03213F;
+    line-height: 1.5;
+
+  }
+
+/* CONTENT ENDS HERE */
 
 #imgcenter{
     display: block;
