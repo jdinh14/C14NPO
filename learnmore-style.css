@@ -177,6 +177,8 @@ footer{
     flex-direction: column;
     width: 100%;
     text-align: center;
+
+    
 }
 
 footer ul {
@@ -203,4 +205,15 @@ footer li{
     text-align: center;
     
 
+}
+
+main{animation: fadeIn 3s;}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  footer section{
+    padding: 50px;
 }
