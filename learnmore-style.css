@@ -1,26 +1,38 @@
-#logo {
+* {
+    margin: 0px;
+    padding: 0px;
+}
+    
+    html {
+    height: 100%;
+    width: 100%;
+}
+  
+  /* adjustments aboove ^^ */
+
+  #logo{
     width: 12%;
     height: 12%;
     margin: 10px;
     padding: 10px;
 }
 
-#logocenter {
+#logocenter{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-a {
+a{
     text-decoration: none;
 }
 
-header {
+header{
     background-color: #03213F;
 }
 
 
-body {
+body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -45,11 +57,11 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    display: inline-block;
+ display: inline-block;
 }
 
-nav li:hover>a {
-    background-color: #03213F;
+nav li:hover > a {
+ background-color: #03213F;
 }
 
 .dropdown-content {
@@ -58,7 +70,7 @@ nav li:hover>a {
     background-color: #03213F;
     top: 100%;
     /* left: 0; */
-    z-index: 1;
+     z-index: 1;
 }
 
 .dropdown-content li {
@@ -74,11 +86,81 @@ nav li:hover>a {
     display: block;
 }
 
-#navheadercolor {
+#navheadercolor{
     background-color: #1A9A9D;
 }
 
-#imgcenter {
+  /* adjustments below HEREEE vv */ 
+  
+.maincontainer {
+width: 100vw;
+height: 100vh; 
+position: relative;
+display: inline-block;
+}
+
+.articlecontainer {
+display: grid;
+grid-template-columns: 75%;
+grid-template-rows: 200px;
+padding-top: 20px; 
+justify-content: center;
+}
+
+.healthcontainer 
+    {
+      animation: fadeinout 4s none;
+    }
+    
+    @keyframes fadeinout
+    {
+      0%{
+        opacity:0;
+      }
+      50%
+      {
+        opacity:1;
+      }
+      100%
+      {
+        opacity:1;
+      }
+    }
+
+#healthicon {
+display: block;
+margin: 0 auto;
+width:300px;
+margin-left: auto;
+margin-right: auto; 
+/* padding-top:70px;
+padding-bottom: 40px; */
+
+}
+
+.information {
+display: grid;
+}
+
+p {
+/* padding: 40px;  */
+color: #fff;
+/* text-align: center; */
+font-size: 19px;
+background-color: #1A9A9D;
+display: block; 
+width: 800px;
+height: 400px;
+margin-left: auto; 
+margin-right: auto;
+background: #1A9A9D;
+border: 2px solid #000;
+overflow: auto; 
+}
+
+/* STOP HERE */
+
+#imgcenter{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -86,59 +168,52 @@ nav li:hover>a {
     height: 50%;
 }
 
-footer {
+footer{
+    bottom: 0;
     background-color: #1A9A9D;
     text-decoration: none;
-    position: relative;
-    bottom: 0;
+    position: relative; 
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
 
-
+    
 }
 
 footer ul {
     margin: 10;
     padding: 0px 15px;
+    
 
+  }
 
-}
-
-footer li {
+footer li{
     list-style-type: none
 }
 
-.grid {
+.grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     grid-auto-flow: row;
 }
 
-.items {
+.items{
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
-
+    
 
 }
 
-main {
-    animation: fadeIn 3s;
-}
+main{animation: fadeIn 3s;}
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
-    100% {
-        opacity: 1;
-    }
-}
-
-footer section {
+  footer section{
     padding: 50px;
 }
