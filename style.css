@@ -1,30 +1,34 @@
+<<<<<<< HEAD
 
 
 #logo{
+=======
+#logo {
+>>>>>>> main
     width: 12%;
     height: 12%;
     margin: 10px;
     padding: 10px;
 }
 
-#logocenter{
+#logocenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-header{
+header {
     background-color: #03213F;
   
     
 }
 
 
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -53,12 +57,17 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
- display: inline-block;
+    display: inline-block;
 }
 
+<<<<<<< HEAD
 nav li:hover > a {
  background-color: #03213F;
  
+=======
+nav li:hover>a {
+    background-color: #03213F;
+>>>>>>> main
 }
 
 .dropdown-content {
@@ -67,8 +76,12 @@ nav li:hover > a {
     background-color: #03213F;
     top: 100%;
     /* left: 0; */
+<<<<<<< HEAD
      z-index: 1;
      
+=======
+    z-index: 1;
+>>>>>>> main
 }
 
 .dropdown-content li {
@@ -84,12 +97,12 @@ nav li:hover > a {
     display: block;
 }
 
-#navheadercolor{
+#navheadercolor {
     background-color: #1A9A9D;
     background-image: linear-gradient(to right, #03213F, rgba(255,255,255,0.5));
 }
 
-#imgcenter{
+#imgcenter {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -97,31 +110,32 @@ nav li:hover > a {
     height: 50%;
 }
 
-footer{
-    bottom: 0;
+footer {
     background-color: #1A9A9D;
     background-image: linear-gradient(to right, #03213F, rgba(255,255,255,0.5));
     text-decoration: none;
-    position: relative; 
+    position: relative;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
 
-    
+
 }
 
 footer ul {
     margin: 10;
     padding: 0px 15px;
-    
 
-  }
 
-footer li{
+}
+
+footer li {
     list-style-type: none
 }
 
+<<<<<<< HEAD
 footer a, h2,h1{
     color: white;
 }
@@ -131,16 +145,20 @@ footer a:hover{
 }
 
 .grid{
+=======
+.grid {
+>>>>>>> main
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     grid-auto-flow: row;
 }
 
-.items{
+.items {
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
+<<<<<<< HEAD
     
     
 
@@ -149,12 +167,22 @@ footer a:hover{
 main{ 
     
     animation: fadeIn 3s;}
+=======
+
+
+}
+
+main {
+    animation: fadeIn 3s;
+}
+>>>>>>> main
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
 
+<<<<<<< HEAD
   footer section{
     padding: 15px;
 }
@@ -325,3 +353,13 @@ padding: 10px;
             
             
             } 
+=======
+    100% {
+        opacity: 1;
+    }
+}
+
+footer section {
+    padding: 50px;
+}
+>>>>>>> main
