@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <script></script>
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html" id="logocenter"><img src="logo.png" id="logo" alt="website homepage"></a>
+        <!-- Homepage link will be logo -->
+        <nav id="navheadercolor">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Learn More</a>
+                    <ul class="dropdown-content">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Meet The Team</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Get Involved</a>
+                    <ul class="dropdown-content">
+                        <li><a href="signup.html">Volunteer Sign-Up</a></li>
+                        <li><a href="workshop.html">Workshops</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Resources</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Healthcare Guide</a></li>
+                        <li><a href="#">Healthcare Partners</a></li>
+                        <!-- Link pdf? -->
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">News</a>
+                    <ul class="dropdown-content">
+                        <li><a href="news.html">Impact Stories</a></li>
+                        <li><a href="calendar.html">Event Calendar</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Contact Us</a>
+                    <ul class="dropdown-content">
+                        <li><a href="contact.html">Contact Information</a></li>
+                        <li><a href="social.html">Social Media</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <main>
+        <section class="content">
+            <form name="myForm" onsubmit="return validator()">
+                <label for="fName">Your First Name</label>
+                <input type="text" id="fName" placeholder="Erick">
+
+                <label for="lName">Your Last Name</label>
+                <input type="text" id="lName" placeholder="Rodea">
+
+                <label for="userEmail">Your Email</label>
+                <input id="userEmail" placeholder="rodea.erick97@gmail.com">
+
+                <label for="comments">Concerns</label>
+                <input type="text" id="comments" placeholder="Your Concerns">
+
+                <input type="submit" value="submit">
+
+
+            </form>
+        </section>
+    </main>
+
+
+
+
+
+    <footer>
+
+
+        <section class="grid">
+            <article class="item">
+                <h2>Learn More</h2>
+                <ul class="#">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">Meet The Team</a></li>
+                </ul>
+            </article>
+
+            <article class="item">
+                <h2>Resource</h2>
+                <ul class="#">
+                    <li><a href="#">Healthcare Guide</a></li>
+                    <li><a href="#">Healthcare Partners</a></li>
+                </ul>
+            </article>
+
+            <article class="item">
+                <h2>Contact</h2>
+                <ul class="#">
+                    <li><a href="contact.html">Contact Information</a></li>
+                    <li><a href="social.html">Social Media</a></li>
+                </ul>
+            </article>
+
+        </section>
+
+
+    </footer>
+</body>
+
+<script>
+    var userEmail = document.myForm.userEmail.value;
+    function isEmail() {
+        // const email = document.getElementById("userEmail");
+
+        const regexx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+
+    }
+
+    function validator() {
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z.0-9-]+)*$/;
+        if (document.myForm.fName.value == "") {
+            alert("must fill in name");
+            document.myForm.fName;
+            return false;
+        }
+        if (document.myForm.lName.value == "") {
+            alert("must fill in last name");
+            document.myForm.lName;
+            return false;
+        }
+        if (document.myForm.userEmail.value == "") {
+            alert("must fill in email");
+            document.myForm.userEmail;
+            return false;
+        }
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (re.test(document.myForm.userEmail.value.trim())) {
+            alert(document.myForm.userEmail.value + " Passed");
+        } else {
+            alert(document.myForm.userEmail.value + ' Email is not valid');
+        }
+        // if (!isEmail(userEmail)) {
+        //     alert(document.myForm.userEmail.value + " is not valid email");
+        //     return false;
+        // } 
+        // if (document.myForm.userEmail.value.match(validRegex)) {
+        //     alert("Passed");
+        // } else {
+        //     alert(document.myForm.userEmail.value + " is not valid email");
+        //     return false;
+
+        // }
+
+        return (true);
+
+    }
+
+</script>
+
+</html>
