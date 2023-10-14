@@ -144,7 +144,7 @@ margin-right: auto;
 display: grid;
 }
 
-p {
+.maincontainer p {
 padding: 40px; 
 color: #fff;
 text-align: center;
