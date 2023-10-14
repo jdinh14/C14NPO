@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="contact.css" rel="stylesheet">
+    <script></script>
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html" id="logocenter"><img src="logo.png" id="logo" alt="website homepage"></a>
+        <!-- Homepage link will be logo -->
+        <nav id="navheadercolor">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Learn More</a>
+                    <ul class="dropdown-content">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Meet The Team</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Get Involved</a>
+                    <ul class="dropdown-content">
+                        <li><a href="signup.html">Volunteer Sign-Up</a></li>
+                        <li><a href="workshop.html">Workshops</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Resources</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Healthcare Guide</a></li>
+                        <li><a href="#">Healthcare Partners</a></li>
+                        <!-- Link pdf? -->
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">News</a>
+                    <ul class="dropdown-content">
+                        <li><a href="news.html">Impact Stories</a></li>
+                        <li><a href="calendar.html">Event Calendar</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Contact Us</a>
+                    <ul class="dropdown-content">
+                        <li><a href="contact.html">Contact Information</a></li>
+                        <li><a href="social.html">Social Media</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <main>
+        <section class="content">
+            <form name="myForm" onsubmit="return validator()">
+                <label for="fName">Your First Name</label>
+                <input type="text" id="fName" placeholder="Erick">
+
+                <label for="lName">Your Last Name</label>
+                <input type="text" id="lName" placeholder="Rodea">
+
+                <label for="userEmail">Your Email</label>
+                <input id="userEmail" placeholder="rodea.erick97@gmail.com">
+
+                <label for="comments">Concerns</label>
+                <input type="text" id="comments" placeholder="Your Concerns">
+
+                <input type="submit" value="submit">
+
+
+            </form>
+        </section>
+    </main>
+
+
+
+
+
+    <footer>
+
+
+        <section class="grid">
+        
+            <article class="contact-info">
+        
+                <div class="subbox">
+                    <h2>Subscribe to our Newsletter</h2>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <button onclick="subscribe()">Subscribe</button>
+                    <p id="message"></p>
+                </div>
+                
+               
+            </article>
+            <article class="contact-info">
+              
+        
+           
+        
+                <h2>Learn More</h2>
+                <ul class="#">
+                    <li><a href="learnmore.html">About Us</a></li>
+                    <li><a href="meetteam.css">Meet The Team</a></li>
+                </ul>
+            
+        
+                <h2>Resource</h2>
+                <ul class="#">
+                    <li><a href="guide.html">Healthcare Guide</a></li> 
+                    <li><a href="partners.html">Healthcare Partners</a></li> 
+                </ul>
+        
+                <h2>News</h2>
+                <ul class="#">
+                    <li><a href="news.css">Impactful Stories</a></li>
+                    <li><a href="calendar.css">Calendar</a></li>
+                </ul>
+            
+            </article>
+        
+            <article class="contact-info">
+                <h2>Contact Us</h2>
+                <ul class="#">
+                    <li><a href="contact.html">Contact Information</a></li>
+                    <li><a href="social.html"><h3>Social Media</h2></a></li>
+        
+                    <div class="social-media-icons">
+                        <a href="www.facebook.com" target="_blank" title="Follow us on Facebook">
+                            <img src="fbicon.svg" alt="Facebook Icon">
+                        </a>
+                        <a href="www.instagram.com" target="_blank" title="Follow us on Instagram">
+                            <img src="igicon.svg" alt="Instagram Icon">
+                        </a>
+                        <a href="www.twitter.com" target="_blank" title="Follow us on Twitter">
+                            <img src="twicon.svg" alt="Twitter Icon">
+                        </a>
+        
+        
+                    </div>
+        
+                    <li><div>
+                        <h1 class="npo-name">Locations and Office Hours</h1>
+                        <p class="address">
+                            Suite 400,<br>
+                            285 Peaceful Pathway,<br>
+                            Sunnyville, SY 48302
+                        </p>
+        
+                        <ul>
+                            <li><strong>Mon:</strong> 10 AM - 2 PM</li>
+                            <li><strong>Tue:</strong> 11 AM - 3 PM</li>
+                            <li><strong>Wed:</strong> 10 AM - 2 PM</li>
+                            <li><strong>Thu:</strong> Closed</li>
+                            <li><strong>Fri:</strong> 11 AM - 3 PM</li>
+                            <li><strong>Sat & Sun:</strong> Closed</li>
+                        </ul>
+        
+                        <p class="phone-number">(123) 456-7890</p>
+                        </p>
+                    </div></li>
+                </ul>
+            </article>
+            
+        </section>
+                    
+        <p>&copy; 2023 Road to Healthcare. All rights reserved.</p>
+            </footer>
+            <script src="script.js"></script>
+        </body>
+
+<script>
+    var userEmail = document.myForm.userEmail.value;
+    function isEmail() {
+        // const email = document.getElementById("userEmail");
+
+        const regexx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+
+    }
+
+    function validator() {
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z.0-9-]+)*$/;
+        if (document.myForm.fName.value == "") {
+            alert(" must fill in first name");
+            document.myForm.fName;
+            return false;
+        }
+        if (!/^[a-zA-Z]*$/g.test(document.myForm.fName.value)) {
+            alert(" First must be a valid Name please enter actual characters. ");
+            document.myForm.fName.focus();
+            return false;
+        }
+
+        if (document.myForm.lName.value == "") {
+            alert(" must fill in last name");
+            document.myForm.lName;
+            return false;
+        }
+
+        if (!/^[a-zA-Z]*$/g.test(document.myForm.lName.value)) {
+            alert(" last name must be a valid Name please enter actual characters. ");
+            document.myForm.lName.focus();
+            return false;
+        }
+        if (document.myForm.userEmail.value == "") {
+            alert(" must fill in email");
+            document.myForm.userEmail;
+            return false;
+        }
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (re.test(document.myForm.userEmail.value.trim())) {
+            alert(document.myForm.userEmail.value + " your email was valid");
+        } else {
+            alert(document.myForm.userEmail.value + ' Email is not valid');
+        }
+        // if (!isEmail(userEmail)) {
+        //     alert(document.myForm.userEmail.value + " is not valid email");
+        //     return false;
+        // } 
+        // if (document.myForm.userEmail.value.match(validRegex)) {
+        //     alert("Passed");
+        // } else {
+        //     alert(document.myForm.userEmail.value + " is not valid email");
+        //     return false;
+
+        // }
+
+        return (true);
+
+    }
+
+</script>
+
+</html>

@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0px;
     padding: 0px;
 }
@@ -6,7 +6,7 @@
     html {
     height: 100%;
     width: 100%;
-}
+} */
   
 #logo{
     width: 12%;
@@ -35,6 +35,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #181A1B;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6)
 }
 
 nav ul {
@@ -85,12 +86,14 @@ nav li:hover > a {
 }
 
 #navheadercolor{
-    background-color: #1A9A9D;
+        background-color: #1A9A9D;
+        background-image: linear-gradient(to right, #03213F, rgba(255,255,255,0.5));
+    
 }
 
 /* CONTENT STARTS HERE*/
 
-h1 {
+#jessh1 {
     margin: auto;
     display: block;
     text-align: center;
@@ -181,6 +184,7 @@ h1 {
 footer{
     bottom: 0;
     background-color: #1A9A9D;
+    background-image: linear-gradient(to right, #03213F, rgba(255,255,255,0.5));
     text-decoration: none;
     position: relative; 
     display: flex;
@@ -200,6 +204,14 @@ footer li{
     list-style-type: none
 }
 
+footer a, h2,h1{
+    color: white;
+}
+
+footer a:hover{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -212,10 +224,13 @@ footer li{
     padding: 20px;
     text-align: center;
     
+    
 
 }
 
-main{animation: fadeIn 3s;}
+main{ 
+    
+    animation: fadeIn 3s;}
 
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -224,156 +239,4 @@ main{animation: fadeIn 3s;}
 
   footer section{
     padding: 50px;
-}
-
-/* phone accessibility  */
-
-@media screen and (max-width: 375px) {
-
-nav, nav li, nav ul, body {
-    display: inline-flex;
-    width: 100vw;
-    flex-wrap: wrap;
-}
-
-#logo {
-    width: 130px;
-    height: 130px;
-    align-items: center;   
-}
-
-nav li {
-    font-size: 13px;
-}
-        
-h1 { 
-    display: inline-block;
-    width: 89%;
-    flex-wrap: wrap;
-    font-size: 23px;
-}
-
-.firstcontainer, .imgcontainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    right: 17px;
-}
-
-img {
-    left: 20vw; 
-}
-
-footer, footer ul, footer li, .grid {
-    font-size: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-}
-
-/* tablet accessibility */
-
-@media screen and (max-width: 820px) {
-
-#logo {
-    width: 300px;
-    height: 300px;
-    align-items: center;   
-}
-    
-nav li {
-    font-size: 28px;
-}
-
-.imgcontainer p {
-    font-size: 30px;
-    margin-top: 20px;
-}
-
-.imgcontainer p:nth-child(3) {
-    font-size: 20px;
-}
-
-.imgcontainer p:nth-child(4) {
-    font-size: 20px;
-}
-
-.firstcontainer, .imgcontainer {
-    top: 40px;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: 500px 500px 500px;
-    gap: 270px 30px;
-    margin-bottom:120px;
-}
-    
-footer, footer ul, footer li, .grid {
-    font-size: 20px;
-}
-}
-
-/* desktop accessibility */
-
-@media screen and (max-width: 820px) {
-
-html {
-        height: 95%;
-        width: 95%;
-}
- nav ul, body {
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 666px;
-}
-
-nav li {
-    font-size: 10px;
-}
-
-#logo {
-    width: 100px;
-    height: 100px;
-    align-items: center;  
-}
-
-h1 { 
-    display: inline-block;
-    width: 95%;
-    font-size: 12px;
-    justify-content: center;
-}
-
-.imgcontainer img  {
-    height: 100px;
-    width: 100px; 
-}
-
-.firstcontainer, .imgcontainer { 
-    top: -60px;
-    left: 5px;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: 300px 300px 300px;
-    gap: 10px 20px;
-    margin-bottom:5px;
-}
-
-.imgcontainer p {
-    font-size: 10px;
-    margin-top: 10px;
-}
-
-.imgcontainer p:nth-child(3) {
-    font-size: 8px;
-}
-
-.imgcontainer p:nth-child(4) {
- font-size: 7px;
-}
-
-footer, footer ul, footer li, .grid {
-    font-size: 8px;
-}
-
 }
