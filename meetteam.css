@@ -93,68 +93,55 @@ nav li:hover > a {
 
 /* CONTENT STARTS HERE*/
 
-/* #imgcenter{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 50%;
-} */
-
 #jessh1 {
     margin: auto;
     display: block;
     text-align: center;
     color: #fff; 
     padding: 20px;
-    margin-top: 180px;
-    margin-bottom: 10px;
-  font-size: 38px;
-  border-bottom: 1rem solid #fff;
+    margin-top: 60px;
+    font-size: 38px;
+    border-bottom: 1rem solid #fff;
 }
 
-/* jerry helped me here..  */
 .firstcontainer {
-/* width: 100vw;
-height: 100vh;  */
-position: relative;
-display: inline-block;
+    position: relative;
+    display: inline-block;
 }
  
 .imgcontainer {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-/* grid-template-columns: repeat(2, 1fr); */
-grid-template-rows: repeat(2, 1fr);
-align-items: center;
-grid-gap: 10px;
-padding-top:130px; 
-padding-left: 30px;
-/* width: 250;
-height: 400px; */
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-rows: repeat(2, 1fr); */
+
+    /* grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto;  */
+    gap: 15px 15px; 
+    align-items: center;
+    /* grid-gap: 10px; */
+    padding-top:130px; 
+    padding-left: 30px;
+    margin-bottom: 60px;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 500px 500px;
 }
 
 .imgcontainer img {
-  /* margin: auto;
-  display: block;
-  width: 195px;
-  height: 194px;
-  border-radius: 100%;
-  overflow: clip;
-  overflow-clip-margin: 0px; */
-  position: relative; 
-  width: 200px;
-  height: 200px; 
-  overflow: hidden; 
-  background: #32557f;
-  box-shadow: 12px 9px 0px #1A9A9D;
+    /* margin: auto;
+    display: block;
+    width: 195px;
+    height: 194px;
+    border-radius: 100%;
+    overflow: clip;
+    overflow-clip-margin: 0px; */
+    position: relative; 
+    width: 200px;
+    height: 200px; 
+    overflow: hidden; 
+    background: #32557f;
+    box-shadow: 12px 9px 0px #1A9A9D;
 }
-
-
-
-/* .imgcontainer:nth-child(even) {
-    box-shadow: 12px 9px 0px #fff;
-} */
 
 .imgcontainer p {
     margin: 15px;
@@ -164,7 +151,6 @@ height: 400px; */
     text-align: end;
     text-align: center;
     color: #fff; 
-
 }
 
 .imgcontainer p:nth-child(3) {
@@ -172,16 +158,17 @@ height: 400px; */
     padding: 10px;
     text-align: end;
     background-color: #03213F;
+}
 
-  }
-
-  .imgcontainer p:nth-child(4) {
+.imgcontainer p:nth-child(4) {
     font-size: 13px; 
     padding: 10px;
     text-align: end;
-    background-color: #03213F;
     line-height: 1.5;
-
+    width: 90%;
+    float: right; 
+    background-color: #03213F;
+    border: .5px solid #2d5b89;
   }
 
 /* CONTENT ENDS HERE */
@@ -204,8 +191,6 @@ footer{
     flex-direction: column;
     width: 100%;
     text-align: center;
-
-    
 }
 
 footer ul {
@@ -253,172 +238,5 @@ main{
   }
 
   footer section{
-    padding: 15px;
+    padding: 50px;
 }
-
-.contact-info {
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    color: white;
-}
-
-.social-media-icons a img{
-    background-color: white;
-    border: 2px solid white; 
-    border-radius: 25px;
-    padding: 2%;
-    
-}
-
-
-.social-media-icons img:hover {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
-  }
-
-  section.commitment{
-    
-    background-image: url("HC3.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
- 
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      color: white;
-    
-      
-      
-  }
-  
-  section.commitment li{
-padding: 10px;
-
-
-  }
-
-  @media (max-width: 420px)
-   { nav a {
-        font-size: 0.7rem;
-        text-align: center;
-    }}
-
-    @media (max-width: 375px)
-    { nav a {
-         font-size: 0.7rem;
-         text-align: center;
-     }
-     #logo{
-        width: 25%;
-        height: 25%;
-        margin: 10px;
-        padding: 10px;
-    }
- 
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
-        grid-auto-flow: row;
-    
-    }
-    
-}
-
-    @media (max-width: 490px)
-    { nav a {
-         font-size: 0.9rem;
-         text-align: center;
-     }
-     #logo{
-       width: 25%;
-       height: 25%;
-       margin: 10px;
-       padding: 10px;
-   }
-
-   .grid{
-       display: grid;
-       grid-template-columns: repeat(2, 1fr);
-       grid-gap: 10px;
-       grid-auto-flow: row;
-   }}
-    
-    @media (max-width: 900px)
-     { nav a {
-          font-size: 0.9rem;
-          text-align: center;
-      }
-      #logo{
-        width: 25%;
-        height: 25%;
-        margin: 10px;
-        padding: 10px;
-    }
-
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 15px;
-        grid-auto-flow: row;
-    }}
-    
-    footer p{ color: white;}
-
-    .subbox {
-        margin-top: 25%;
-        padding: 20px;
-    }
-    
-    input[type="email"] {
-        width: 80%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 45px;
-        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9);
-
-    }
-    
-    button {
-        padding: 10px 15px;
-        border-radius: 50%;
-        background-color: #03213F;
-        color: white;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-    
-    button:hover {
-        background-color: #0056b3;
-    }
-
-    #sectionwhite{
-        background-color: #f1f1f1;
-        margin: 10px;
-        padding: 10px;
-        opacity: 0.9;
-        margin-bottom: 0
-        
-        
-        }
-        
-        #sectionwhite2{
-            background-color: #f1f1f1;
-            margin: 10px;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            opacity: 0.9;
-            margin-bottom: 0;
-            
-            
-            }
