@@ -90,68 +90,55 @@ nav li:hover > a {
 
 /* CONTENT STARTS HERE*/
 
-/* #imgcenter{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 50%;
-} */
-
 h1 {
     margin: auto;
     display: block;
     text-align: center;
     color: #fff; 
     padding: 20px;
-    margin-top: 180px;
-    margin-bottom: 10px;
-  font-size: 38px;
-  border-bottom: 1rem solid #fff;
+    margin-top: 60px;
+    font-size: 38px;
+    border-bottom: 1rem solid #fff;
 }
 
-/* jerry helped me here..  */
 .firstcontainer {
-/* width: 100vw;
-height: 100vh;  */
-position: relative;
-display: inline-block;
+    position: relative;
+    display: inline-block;
 }
  
 .imgcontainer {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-/* grid-template-columns: repeat(2, 1fr); */
-grid-template-rows: repeat(2, 1fr);
-align-items: center;
-grid-gap: 10px;
-padding-top:130px; 
-padding-left: 30px;
-/* width: 250;
-height: 400px; */
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-rows: repeat(2, 1fr); */
+
+    /* grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto;  */
+    gap: 15px 15px; 
+    align-items: center;
+    /* grid-gap: 10px; */
+    padding-top:130px; 
+    padding-left: 30px;
+    margin-bottom: 60px;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 500px 500px;
 }
 
 .imgcontainer img {
-  /* margin: auto;
-  display: block;
-  width: 195px;
-  height: 194px;
-  border-radius: 100%;
-  overflow: clip;
-  overflow-clip-margin: 0px; */
-  position: relative; 
-  width: 200px;
-  height: 200px; 
-  overflow: hidden; 
-  background: #32557f;
-  box-shadow: 12px 9px 0px #1A9A9D;
+    /* margin: auto;
+    display: block;
+    width: 195px;
+    height: 194px;
+    border-radius: 100%;
+    overflow: clip;
+    overflow-clip-margin: 0px; */
+    position: relative; 
+    width: 200px;
+    height: 200px; 
+    overflow: hidden; 
+    background: #32557f;
+    box-shadow: 12px 9px 0px #1A9A9D;
 }
-
-
-
-/* .imgcontainer:nth-child(even) {
-    box-shadow: 12px 9px 0px #fff;
-} */
 
 .imgcontainer p {
     margin: 15px;
@@ -161,7 +148,6 @@ height: 400px; */
     text-align: end;
     text-align: center;
     color: #fff; 
-
 }
 
 .imgcontainer p:nth-child(3) {
@@ -169,16 +155,17 @@ height: 400px; */
     padding: 10px;
     text-align: end;
     background-color: #03213F;
+}
 
-  }
-
-  .imgcontainer p:nth-child(4) {
+.imgcontainer p:nth-child(4) {
     font-size: 13px; 
     padding: 10px;
     text-align: end;
-    background-color: #03213F;
     line-height: 1.5;
-
+    width: 90%;
+    float: right; 
+    background-color: #03213F;
+    border: .5px solid #2d5b89;
   }
 
 /* CONTENT ENDS HERE */
@@ -200,8 +187,6 @@ footer{
     flex-direction: column;
     width: 100%;
     text-align: center;
-
-    
 }
 
 footer ul {
@@ -239,4 +224,156 @@ main{animation: fadeIn 3s;}
 
   footer section{
     padding: 50px;
+}
+
+/* phone accessibility  */
+
+@media screen and (max-width: 375px) {
+
+nav, nav li, nav ul, body {
+    display: inline-flex;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 130px;
+    height: 130px;
+    align-items: center;   
+}
+
+nav li {
+    font-size: 13px;
+}
+        
+h1 { 
+    display: inline-block;
+    width: 89%;
+    flex-wrap: wrap;
+    font-size: 23px;
+}
+
+.firstcontainer, .imgcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    right: 17px;
+}
+
+img {
+    left: 20vw; 
+}
+
+footer, footer ul, footer li, .grid {
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
+
+/* tablet accessibility */
+
+@media screen and (max-width: 820px) {
+
+#logo {
+    width: 300px;
+    height: 300px;
+    align-items: center;   
+}
+    
+nav li {
+    font-size: 28px;
+}
+
+.imgcontainer p {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.imgcontainer p:nth-child(3) {
+    font-size: 20px;
+}
+
+.imgcontainer p:nth-child(4) {
+    font-size: 20px;
+}
+
+.firstcontainer, .imgcontainer {
+    top: 40px;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: 500px 500px 500px;
+    gap: 270px 30px;
+    margin-bottom:120px;
+}
+    
+footer, footer ul, footer li, .grid {
+    font-size: 20px;
+}
+}
+
+/* desktop accessibility */
+
+@media screen and (max-width: 820px) {
+
+html {
+        height: 95%;
+        width: 95%;
+}
+ nav ul, body {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 666px;
+}
+
+nav li {
+    font-size: 10px;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    align-items: center;  
+}
+
+h1 { 
+    display: inline-block;
+    width: 95%;
+    font-size: 12px;
+    justify-content: center;
+}
+
+.imgcontainer img  {
+    height: 100px;
+    width: 100px; 
+}
+
+.firstcontainer, .imgcontainer { 
+    top: -60px;
+    left: 5px;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: 300px 300px 300px;
+    gap: 10px 20px;
+    margin-bottom:5px;
+}
+
+.imgcontainer p {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.imgcontainer p:nth-child(3) {
+    font-size: 8px;
+}
+
+.imgcontainer p:nth-child(4) {
+ font-size: 7px;
+}
+
+footer, footer ul, footer li, .grid {
+    font-size: 8px;
+}
+
 }
