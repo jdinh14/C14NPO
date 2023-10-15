@@ -128,6 +128,7 @@ img{
 }
 
 
+
 .BasicsofHealthcare, .AmericanHealthcare, .FinancialWellness{
     width: 50%;
     font-size: 27px;
@@ -149,6 +150,9 @@ img{
 }
 .img2{
     border-radius: 10px 0 0 10px;
+}
+.PhoneImg1{
+    display: none;
 }
 
 /*footer*/
@@ -187,5 +191,188 @@ footer li{
     padding: 20px;
     text-align: center;
     
+
+}
+
+/* responsiveness*/
+
+@media screen and (max-width: 400px){
+
+h1{
+    font-size: 2.5rem;
+}
+
+.Slogan2{
+    width: 100%;
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.5rem;
+    
+}
+
+.img1 , .img2{
+    display: none;
+}
+
+
+.BasicsofHealthcare, .AmericanHealthcare, .FinancialWellness{
+    font-size: 1rem;
+    margin: 0;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.Slogan{
+    height: 200px;
+    font-size: .5em;
+    margin-bottom: 15px;
+}
+
+footer{
+ font-size: 1rem;
+}
+.WorkSlogan{
+    font-size: 1em;
+}
+
+}
+
+@media screen and (max-width: 1000px){
+
+    h1{
+        font-size:3rem;
+    }
+    
+    .Slogan2{
+        width: 100%;
+        margin: 0;
+        font-size: 1.3em;
+        line-height: 1.5rem;
+        
+    }
+    
+   
+    
+    .BasicsofHealthcare, .AmericanHealthcare, .FinancialWellness{
+        font-size: 1.5rem;
+        margin: 0;
+        width: 90%;
+        padding: 5%;
+        border-radius: 0px;
+        height: 70%;
+        
+    }
+    .img1, .img2{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .Slogan{
+        height: 300px;
+        font-size: 1em;
+        margin-bottom: 15px;
+        border-radius: 0 0 30% 30%;
+    }
+    .Workshops, .Workshop3{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .Workshops2{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .AllWorkshops{
+        justify-content: space-between;
+    }
+  
+h3{
+    font-size: 2rem;
+}
+
+    footer{
+     font-size: 1rem;
+    }
+
+.WorkSlogan{
+    line-height: 1em;
+    font-size: 1em;
+}
+
+
+
+}
+
+@media screen and (max-width: 1500px){
+
+    h1{
+        font-size:4rem;
+    }
+    
+    .Slogan2{
+        width: 100%;
+        margin: 0;
+        font-size: 1.3em;
+        line-height: 1.5rem;
+        
+    }
+    
+    .Workshops, .Workshop3{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .Workshops2{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .BasicsofHealthcare, .AmericanHealthcare, .FinancialWellness{
+        margin: 0%;
+        font-size: 1.5rem;
+        margin: 0;
+        width: 90%;
+        padding: 5%;
+        border-radius: 0px;
+        height: 100%;
+    }
+    
+    .Slogan{
+        height: 300px;
+        font-size: 1em;
+        margin-bottom: 15px;
+        border-radius: 0 0 30% 30%;
+    }
+   
+    .AllWorkshops{
+        justify-content: space-between;
+    }
+  
+
+h3{
+    font-size: 2rem;
+}
+
+    footer{
+     font-size: 1rem;
+    }
+
+.WorkSlogan{
+    line-height: 1em;
+    font-size: 2rem;
+    
+}
+
+.img1, .img2{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 }
