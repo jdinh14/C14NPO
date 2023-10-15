@@ -37,7 +37,7 @@ body{font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #181A1B;
-    background-image: url("stock.jpeg");
+    background-image: url("../photos/stock.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
   -webkit-background-size: cover;

@@ -38,7 +38,7 @@ body{
     padding: 0;
     background-color: #181A1B;
     text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
-    background-image: url("HC2.jpg");
+    background-image: url("../photos/HC2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
   -webkit-background-size: cover;
