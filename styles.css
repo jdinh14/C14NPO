@@ -1,108 +1,25 @@
 
-#logo{
-    width: 12%;
-    height: 12%;
-    margin: 10px;
-    padding: 10px;
-}
-
-#logocenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-a{
-    text-decoration: none;
-}
-
-header{
-    background-color: #03213F;
-}
 
 
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #5d8aa8;
-}
 
-nav{
-    margin-bottom: 0;
-}
 
-nav ul {
-    padding: 0;
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-nav li {
-    display: inline-block;
-    position: relative;
-}
-ul{
-    margin-bottom: 0;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
- display: inline-block;
-}
 
-nav li:hover > a {
- background-color: #03213F;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #03213F;
-    top: 100%;
-    /* left: 0; */
-     z-index: 1;
-}
-
-.dropdown-content li {
-    display: block;
-}
-
-.dropdown-content a {
-    padding: 10px;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-#navheadercolor{
-    background-color: #1A9A9D;
+main{ 
     
-}
+    animation: fadeIn 3s;}
 
-#imgcenter{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 50%;
-}
-
-                        /* END OF NAV */
-
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .VolBox{
     display: flex;
     height: 525px;
 }
 
-h1{
+.Volbox h1{
     font-size: 60px;
     margin-left: 12%;
     font-family: 'Varela Round', sans-serif;
@@ -147,7 +64,7 @@ h1{
     font-size: 43px;
 }
 
-h3{
+.VolAll h3{
     font-size: 30px;
 }
 
@@ -179,44 +96,11 @@ h3{
 /* footer */
 
 
-footer{
-    background-color: #1A9A9D;
-    text-decoration: none;
-    position: relative; 
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-}
 
-footer ul {
-    margin: 10;
-    padding: 0px 15px;
-    
-
-  }
-
-footer li{
-    list-style-type: none
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    grid-auto-flow: row;
-}
-
-.items{
-    border: 1px solid #ddd;
-    padding: 20px;
-    text-align: center;
-}
 
 /* reponsiveness*/
 
-
+/* 
 @media screen and (min-width: 400px){
 
 
@@ -238,7 +122,7 @@ footer li{
         height: 50%;
     }
 
-    h1{
+    .Volbox h1{
         font-size: 1.3em;
         margin: 0;
         padding-left: 40px;
@@ -324,7 +208,7 @@ footer{
         height: 300px;
     }
 
-    h1{
+    .Volbox h1{
         font-size: 35px;
         margin: 0;
         padding-left: 40px;
@@ -403,7 +287,7 @@ footer{
         
     }
 
-    h1{
+    .Volbox h1{
         font-size: 1.5em;
         margin: 0;
         padding-left: 40px;
@@ -457,4 +341,4 @@ footer{
     font-size: 1rem;
 }
     
-}
+} */

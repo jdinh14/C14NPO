@@ -37,7 +37,16 @@ body{
     margin: 0;
     padding: 0;
     background-color: #181A1B;
-    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6)
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
+    background-image: url("HC2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6) 
+   
 }
 
 nav ul {
@@ -138,6 +147,10 @@ width:300px;
 padding: 30px;
 margin-left: auto;
 margin-right: auto; 
+background-color: white;
+border: 2px solid white; 
+border-radius: 250px;
+
 }
 
 .information {
@@ -250,6 +263,7 @@ margin-left: auto;
 margin-right: auto;
 height: 150px;
 width: 150px; 
+
 }
 
 p {
