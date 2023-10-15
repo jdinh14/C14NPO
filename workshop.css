@@ -1,4 +1,5 @@
 
+
 #logo{
     width: 12%;
     height: 12%;
@@ -25,7 +26,7 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #D8CAFC;
+    background-color: #5d8aa8;
 }
 
 nav ul {
@@ -97,10 +98,11 @@ h1{
     font-family: 'Varela Round', sans-serif;
 }
 .Slogan{
-    background-color: #5630B4;
+    background-color: #03213F;
     padding: 30px;
     border-radius: 0 0 20% 20%;
     color: white;
+    margin-bottom: 50px;
 }
 
 .Slogan2{
@@ -129,7 +131,7 @@ img{
 .BasicsofHealthcare, .AmericanHealthcare, .FinancialWellness{
     width: 50%;
     font-size: 27px;
-    background-color: #AA8EF7;
+    background-color: #c3ddf5;
     padding: 50px;
     font-family: 'Varela Round', sans-serif;
 }
