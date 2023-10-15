@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=f, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+
+        <a href="../spa-index.html" id="logocenter"><img src="../photos/logo.png" id="logo" alt="página de inicio del sitio web"></a>
+        
+            <nav id="navheadercolor">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">Más información</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../learnmore/spa-learnmore.html">Acerca de nosotros</a></li>
+                            <li><a href="../learnmore/spa-meetteam.html">Conoce al equipo</a></li>
+                        </ul>
+                    </li>
+            
+                    <li class="dropdown">
+                        <a href="#">Participa</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../getinvolved/spa-signup.html">Registro de voluntarios</a></li>
+                            <li><a href="../getinvolved/spa-workshop.html">Talleres</a></li>
+                        </ul>
+                    </li>
+            
+                    <li class="dropdown">
+                        <a href="#">Recursos</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../resources/spa-guide.html">Guía de atención médica</a></li> 
+                            <li><a href="../resources/spa-partners.html">Socios de atención médica</a></li> 
+
+                        </ul>
+                    </li>
+            
+                    <li class="dropdown">
+                        <a href="#">Noticias</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../news/spa-news.html">Historias de impacto</a></li>
+                            <li><a href="../news/spa-calendar.html">Calendario de eventos</a></li>
+                            
+                        </ul>
+                    </li>
+            
+                    <li class="dropdown">
+                        <a href="#">Contáctenos</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../contact/spa-contact.html">Información de contacto</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            
+    </header>
+
+    <main>
+        <section class="VolBox">
+            <section class="Volunteering">
+                <h1>Encuentra una oportunidad de voluntariado</h1>
+                <p class="VolunteerP">Como organización, creemos que el voluntariado es una de las formas más efectivas de hacer un cambio. El trabajo vital de Road to Healthcare es posible gracias a personas como tú.</p>
+            </section>
+            <img class="Volunteer1" src="../photos/Volunteer1 (1).jpg">
+        </section>
+    
+        <section class="VolAll">
+            <section class="VolunteerOppurtunity">
+                <h2 class="MakeAChange">Haz un <span style="color: #5630B4;">cambio</span></h2>
+                <h3>Oratoria Pública</h3>
+                <section>Road to Healthcare ofrece oportunidades semanales para educar, comunicar y abogar ante un público que lo necesita. Los discursos deben estar dirigidos a inmigrantes indocumentados y ayudarlos a dar un paso hacia soluciones para los problemas que puedan enfrentar. Se prefiere hablantes de español.</section>
+                
+                <h3>Conviértete en Coordinador con Road to Healthcare</h3>
+                <p>¿Interesado en oportunidades de gestión de proyectos? Road to Healthcare siempre está buscando ayuda para planificar eventos, oradores y actividades comunitarias.</p>
+                
+                <h3>Lo que Ofrecemos</h3>
+                <p>Road to Healthcare ofrece muchos beneficios para nuestros voluntarios.</p>
+                <ul>
+                    <li>Asistencia médica</li>
+                    <li>Comidas gratuitas</li>
+                    <li>Alcance comunitario</li>
+                    <li>Acceso gratuito a todos los eventos comunitarios</li>
+                    <li>Acceso gratuito a todos los talleres</li>
+                </ul>
+            </section>
+            
+            <section class="VolForm">
+                <h3>¿Interesado en ser voluntario? Contáctanos a continuación para hacer un cambio.</h3>
+                <section class="Information1">
+                    <label for="FirstName">Nombre</label>
+                    <input type="text" id="Information1">
+                    <label for="LastName">Apellido</label>
+                    <input type="text" id="Information1">
+                </section>
+                <section class="Information2">
+                    <label for="email">Correo electrónico</label>
+                    <input type="text" id="Information2">
+                    <label for="PhoneNumber">Número de teléfono</label>
+                    <input type="tel" id="Information2">
+                </section>
+                <label for="AboutYou">Acerca de ti</label>
+                <input type="text" id="Information3">
+                <label for="Language">¿Tienes conocimientos de español?</label>
+                <input type="text" id="Information3">
+                <label for="AdditionalInformation">Información adicional</label>
+                <input type="text" id="Information3">
+            </section>
+        </section>
+    </main>
+    
+
+    <footer>
+        <section class="grid">
+            <article class="contact-info">
+                <div class="subbox">
+                    <h2>Suscríbete a nuestro Boletín</h2>
+                    <input type="email" id="email" placeholder="Ingresa tu correo electrónico">
+                    <button onclick="subscribe()">Suscribirse</button>
+                    <p id="message"></p>
+                </div>
+            </article>
+    
+            <article class="contact-info">
+                <h2>Aprende Más</h2>
+                <ul class="#">
+                    <li><a href="../learnmore/spa-learnmore.html">Acerca de Nosotros</a></li>
+                    <li><a href="../learnmore/spa-meetteam.html">Conoce al Equipo</a></li>
+                </ul>
+        
+                <h2>Recursos</h2>
+                <ul class="#">
+                    <li><a href="../resources/spa-guide.html">Guía de Atención Médica</a></li>
+                    <li><a href="../resources/spa-partners.html">Socios de Atención Médica</a></li>
+                </ul>
+                <h2>Noticias</h2>
+                <ul class="#">
+                    <li><a href="../news/spa-news.html">Historias Impactantes</a></li>
+                    <li><a href="../news/spa-calendar.html">Calendario</a></li>
+                </ul>
+                <h2>Idioma</h2>
+                <a href="signup.html" class="langicon">
+                    <img src="../photos/engicon.png" alt="Inglés">
+                </a>
+                <a href="#" class="langicon">
+                    <img src="../photos/spaicon.png" alt="Español">
+                </a>
+
+                </article>
+
+                <article class="contact-info">
+        
+                <h2>Contacto</h2>
+                <ul class="#">
+                    <li><a href="../contact/contact.html">Información de Contacto</a></li>
+                    <li><h3>Redes Sociales</h3></li>
+                    <div class="social-media-icons">
+                        <a href="www.facebook.com" target="_blank" title="Síguenos en Facebook">
+                            <img src="../photos/fbicon.svg" alt="Ícono de Facebook">
+                        </a>
+                        <a href="www.instagram.com" target="_blank" title="Síguenos en Instagram">
+                            <img src="../photos/igicon.svg" alt="Ícono de Instagram">
+                        </a>
+                        <a href="www.twitter.com" target="_blank" title="Síguenos en Twitter">
+                            <img src="../photos/twicon.svg" alt="Ícono de Twitter">
+                        </a>
+                    </div>
+                    <li>
+                        <div>
+                            <h1 class="npo-name">Ubicaciones y Horarios de Oficina</h1>
+                            <p class="address">
+                                Suite 400,<br>
+                                285 Camino Pacífico,<br>
+                                Sunnyville, SY 48302
+                            </p>
+                            <ul>
+                                <li><strong>Lun:</strong> 10 AM - 2 PM</li>
+                                <li><strong>Mar:</strong> 11 AM - 3 PM</li>
+                                <li><strong>Mié:</strong> 10 AM - 2 PM</li>
+                                <li><strong>Jue:</strong> Cerrado</li>
+                                <li><strong>Vie:</strong> 11 AM - 3 PM</li>
+                                <li><strong>Sáb y Dom:</strong> Cerrado</li>
+                            </ul>
+                            <p class="phone-number">(123) 456-7890</p>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <p>&copy; 2023 Camino a la Atención Médica. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
