@@ -165,3 +165,159 @@ form input[type="submit"] {
 .content {
     border: solid wheat 20px;
 }
+
+@media (max-width: 400px) {
+    nav a {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .date {
+        font-size: 1rem;
+    }
+
+    iframe {
+        width: 325px;
+        height: 150px;
+    }
+
+    img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .newspage h3 {
+        font-size: 0.6rem;
+    }
+
+    section {
+        font: 12px;
+    }
+
+    .myForm,
+    label {
+        width: 40%;
+        height: 1vh;
+
+    }
+
+    input #fname {
+        width: 40%;
+        height: 1vh;
+    }
+
+    form input {
+        display: block;
+        width: auto;
+        padding: 5px;
+        margin: 0 0 10px;
+        border: none;
+        font-size: 22px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        cursor: pointer;
+
+    }
+
+    form input[type="submit"] {
+        background: #1A9A9D;
+        color: white;
+        cursor: pointer;
+        width: 50%;
+    }
+
+    form label {
+        display: block;
+        width: 40%;
+        padding: 5px;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: bold;
+        background-color: #333;
+        color: white;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+    nav a {
+        text-align: center;
+    }
+
+    .date {
+        font-size: 1.5rem;
+    }
+
+    iframe {
+        width: 475px;
+        height: 250px;
+    }
+
+    .myForm,
+    label {
+        width: 40%;
+        height: 1vh;
+        display: inline-block;
+
+    }
+
+    input #fname {
+        width: 20%;
+        height: 1vh;
+    }
+
+    .myForm,
+    label {
+        width: 40%;
+        height: 1vh;
+
+    }
+
+    input #fname {
+        width: 40%;
+        height: 1vh;
+    }
+
+    form input {
+        display: block;
+        width: auto;
+        padding: 5px;
+        margin: 0 0 10px;
+        border: none;
+        font-size: 22px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        cursor: pointer;
+
+    }
+
+    form input[type="submit"] {
+        background: #1A9A9D;
+        color: white;
+        cursor: pointer;
+        width: 50%;
+    }
+
+    form label {
+        display: block;
+        width: 40%;
+        padding: 5px;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: bold;
+        background-color: #333;
+        color: white;
+    }
+}
+
+
+
+
+@media (min-width: 801px) {
+    .date {
+        font-size: 1.75rem;
+    }
+}
