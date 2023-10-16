@@ -109,21 +109,24 @@
 <label for="FirstName">First Name</label>
 <input type="text" id="Information1">
 <label for="LastName">Last Name</label>
-<input type="text" id="Information1">
+<input type="text" id="Information1" required>
 </section>
 <section  class="Information2">
 <label for="email">Email</label>
 <input type="text" id="Information2">
 <label for="Phone Number">Phone number</label>
-<input type="tel" id="Information2">
+<input type="tel" id="Information2" required>
 </section>
 <label for="About You">About You</label>
 <input type="text" id="Information3">
 <label for="Language">Are you proficient in spanish?</label>
-<input type="text" id="Information3">
+<input type="text" id="Information3" required>
 <label for="Information">Additional Information</label>
-<input type="text" id="Information3">
+<input type="text" id="Information3" required>
+<section class="FormButton">
 
+<button onsubmit="validator()" class="BrookeButton" type="button">Submit</button>
+</section>
 </section>
 
 </section>
@@ -135,7 +138,6 @@
     <section class="grid">
     
         <article class="contact-info">
-    
             <div class="subbox">
                 <h2>Subscribe to our Newsletter</h2>
                 <input type="email" id="email" placeholder="Enter your email">
@@ -228,8 +230,9 @@
         
     </section>
                 
-    <p>&copy; 2023 Road to Healthcare. All rights reserved.</p>
+    <p>2023 Road to Healthcare. All rights reserved.</p>
         </footer>
-        <script src="../script.js"></script>
+ 
+
 </body>
 </html>

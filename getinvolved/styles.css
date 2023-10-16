@@ -14,7 +14,9 @@ main{
   body{
     background-color: rgb(30, 39, 75);
   }
-
+h1{
+    padding-left: 10%;
+}
 .VolBox{
     display: flex;
     height: 525px;
@@ -83,6 +85,17 @@ main{
 
 }
 
+.BrookeButton{
+    margin-top: 3%;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: #03213F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
 .Information1{
     font-size: 20px;
     
@@ -109,6 +122,9 @@ main{
     .Nav{
         width: 100%;
     }
+    ul{
+        margin-bottom: 0;
+        }
 
     .dropdown{
         width: 25%;
@@ -194,6 +210,10 @@ footer{
     .Nav{
         width: 100%;
     }
+   
+    ul{
+        margin-bottom: 0;
+        }
 
     .dropdown{
         width: 25%;
@@ -258,6 +278,10 @@ footer{
 p{
     font-size: 1.5em;
 }
+.address{
+    font-size: 1rem;
+}
+
 
 footer{
     width: 100%;
@@ -270,6 +294,10 @@ footer{
 @media screen and (min-width: 1300px){
     .Nav{
         width: 100%;
+    }
+    
+    ul{
+    margin-bottom: 0;
     }
 
     .dropdown{
