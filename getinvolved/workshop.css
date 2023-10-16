@@ -139,7 +139,6 @@ main{
 }
 
 
-
 .BasicsofHealthcare, .AmericanHealthcare, .FinancialWellness{
     width: 50%;
     font-size: 27px;
@@ -250,7 +249,7 @@ footer{
 
 @media screen and (max-width: 1000px){
 
-    h1{
+    .Workshop{
         font-size:3rem;
     }
     
@@ -271,11 +270,12 @@ footer{
         padding: 5%;
         border-radius: 0px;
         height: 70%;
+
         
     }
     .img1, .img2{
         width: 100%;
-        height: 300px;
+        height: auto;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -319,7 +319,7 @@ h3{
 
 @media screen and (max-width: 1500px){
 
-    h1{
+    .Workshop{
         font-size:4rem;
     }
     
@@ -380,7 +380,6 @@ h3{
 
 .img1, .img2{
     width: 100%;
-    height: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
