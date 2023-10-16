@@ -2,9 +2,6 @@
 
 
 
-
-
-
 main{ 
     
     animation: fadeIn 3s;}
@@ -12,6 +9,10 @@ main{
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+  }
+
+  body{
+    background-color: rgb(30, 39, 75);
   }
 
 .VolBox{
@@ -33,7 +34,7 @@ main{
 .Volunteering{
    
     width: 60%;
-    background-color: #03213F;
+    background-color: #03294e;
     padding: 5%;
     color: white; 
     border-radius: 0 0 0 20%;
@@ -93,14 +94,15 @@ main{
 }
 
 
+
 /* footer */
 
 
 
 
-/* reponsiveness*/
 
-/* 
+
+
 @media screen and (min-width: 400px){
 
 
@@ -113,9 +115,7 @@ main{
         font-size: .8em;
         
     }
-    ul a{
-        padding: 0%;
-    }
+   
 
     .VolBox{
         display: flex;
@@ -267,7 +267,7 @@ footer{
 }
 
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1300px){
     .Nav{
         width: 100%;
     }
@@ -341,4 +341,4 @@ footer{
     font-size: 1rem;
 }
     
-} */
+}
