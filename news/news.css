@@ -58,7 +58,7 @@ h3 {
         height: 150px;
     }
 
-    img {
+    .newsarticle img {
         width: 150px;
         height: 100px;
     }
@@ -90,9 +90,16 @@ h3 {
     }
 }
 
-main{animation: fadeIn 3s;}
+main {
+    animation: fadeIn 3s;
+}
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
