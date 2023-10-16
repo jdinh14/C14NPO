@@ -225,8 +225,8 @@ padding: 10px;
     } */
 
     @media (max-width: 380px)
-    { nav a {
-         font-size: 0.7rem;
+    { nav a{
+         font-size: 0.9rem;
          text-align: center;
      }
      #logo{
@@ -237,7 +237,7 @@ padding: 10px;
     }
    
     html{
-        width: 110%;
+        font-size: 0.7rem;
     }
 
 
