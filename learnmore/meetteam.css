@@ -1,34 +1,31 @@
-
-  
-#logo{
+#logo {
     width: 12%;
     height: 12%;
     margin: 10px;
     padding: 10px;
 }
 
-#logocenter{
+#logocenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-header{
+header {
     background-color: #03213F;
 }
 
 
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #181A1B;
     text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6)
-    
 }
 
 nav ul {
@@ -49,11 +46,11 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
- display: inline-block;
+    display: inline-block;
 }
 
-nav li:hover > a {
- background-color: #03213F;
+nav li:hover>a {
+    background-color: #03213F;
 }
 
 .dropdown-content {
@@ -62,7 +59,7 @@ nav li:hover > a {
     background-color: #03213F;
     top: 100%;
     /* left: 0; */
-     z-index: 1;
+    z-index: 1;
 }
 
 .dropdown-content li {
@@ -78,10 +75,10 @@ nav li:hover > a {
     display: block;
 }
 
-#navheadercolor{
-        background-color: #1A9A9D;
-        background-image: linear-gradient(to right, #03213F, rgba(255,255,255,0.5));
-    
+#navheadercolor {
+    background-color: #1A9A9D;
+    background-image: linear-gradient(to right, #03213F, rgba(255, 255, 255, 0.5));
+
 }
 
 /* CONTENT STARTS HERE*/
@@ -90,7 +87,7 @@ nav li:hover > a {
     margin: auto;
     display: block;
     text-align: center;
-    color: #fff; 
+    color: #fff;
     padding: 20px;
     margin-top: 60px;
     font-size: 38px;
@@ -101,18 +98,18 @@ nav li:hover > a {
     position: relative;
     display: inline-block;
 }
- 
+
 .imgcontainer {
     display: grid;
- 
-    gap: 15px 15px; 
+
+    gap: 15px 15px;
     align-items: center;
     /* grid-gap: 10px; */
-    padding-top:130px; 
+    padding-top: 130px;
     padding-left: 30px;
     margin-bottom: 60px;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: 500px 500px;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: 500px 500px; */
 }
 
 .imgcontainer img {
@@ -123,45 +120,45 @@ nav li:hover > a {
     border-radius: 100%;
     overflow: clip;
     overflow-clip-margin: 0px; */
-    position: relative; 
+    position: relative;
     width: 200px;
-    height: 200px; 
-    overflow: hidden; 
+    height: 200px;
+    overflow: hidden;
     background: #32557f;
     box-shadow: 12px 9px 0px #1A9A9D;
 }
 
 .imgcontainer p {
     margin: 15px;
-    padding:10px;
-    font-size: 19px; 
+    padding: 10px;
+    font-size: 19px;
     font-weight: bold;
     text-align: end;
     text-align: center;
-    color: #fff; 
+    color: #fff;
 }
 
 .imgcontainer p:nth-child(3) {
-    font-size: 14.5px; 
+    font-size: 14.5px;
     padding: 10px;
     text-align: end;
     background-color: #03213F;
 }
 
 .imgcontainer p:nth-child(4) {
-    font-size: 13px; 
+    font-size: 13px;
     padding: 10px;
     text-align: end;
     line-height: 1.5;
     width: 90%;
-    float: right; 
+    float: right;
     background-color: #03213F;
     border: .5px solid #2d5b89;
-  }
+}
 
 /* CONTENT ENDS HERE */
 
-.imgcenter{
+.imgcenter {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -169,12 +166,12 @@ nav li:hover > a {
     height: 50%;
 }
 
-footer{
+footer {
     bottom: 0;
     background-color: #1A9A9D;
-    background-image: linear-gradient(to right, #03213F, rgba(255,255,255,0.5));
+    background-image: linear-gradient(to right, #03213F, rgba(255, 255, 255, 0.5));
     text-decoration: none;
-    position: relative; 
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -184,56 +181,76 @@ footer{
 footer ul {
     margin: 10;
     padding: 0px 15px;
-    
 
-  }
 
-footer li{
+}
+
+footer li {
     list-style-type: none
 }
 
-footer a, h2,h1{
+footer a,
+h2,
+h1 {
     color: white;
 }
 
-footer a:hover{
+footer a:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     grid-auto-flow: row;
 }
 
-.items{
+.items {
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
-    
-    
+
+
 
 }
 
-main{ 
-    
-    animation: fadeIn 3s;}
+main {
+
+    animation: fadeIn 3s;
+}
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
 
-  footer section{
+    100% {
+        opacity: 1;
+    }
+}
+
+footer section {
     padding: 50px;
 }
 
 /* phone accessibility  */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
+    .imgcontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
 
-    /* nav, nav li, nav ul, body {
+@media screen and (min-width: 481px) and (max-width: 670px) {
+    .imgcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* nav, nav li, nav ul, body {
         display: inline-flex;
         width: 100vw;
         flex-wrap: wrap;
@@ -277,16 +294,17 @@ main{
     }
     }
      */
-    /* tablet accessibility */
-    
-    @media screen and (max-width: 820px) {
+/* tablet accessibility */
 
-        .imgcontainer{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 15px;
-            grid-auto-flow: row;
-        }
+/* @media screen and (min-width: 820px) {
+
+    .imgcontainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        grid-auto-flow: row;
+    } */
+
 /*     
     #logo {
         width: 300px;
@@ -322,13 +340,13 @@ main{
     footer, footer ul, footer li, .grid {
         font-size: 20px;
     } */
-    }
-    
-    /* desktop accessibility */
-    
-    @media screen and (max-width: 820px) {
-    
-    /* html {
+
+
+/* desktop accessibility */
+
+/* @media screen and (max-width: 820px) { */
+
+/* html {
             height: 95%;
             width: 95%;
     }
@@ -385,13 +403,11 @@ main{
     footer, footer ul, footer li, .grid {
         font-size: 8px;
     } */
-    .imgcontainer{
+/* .imgcontainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 15px;
         grid-auto-flow: row;
     }
-    
-    }
-    
-    
+
+} */
