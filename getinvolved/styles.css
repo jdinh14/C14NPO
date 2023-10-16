@@ -124,13 +124,14 @@ h1{
     }
     ul{
         margin-bottom: 0;
+        
         }
-
+/* 
     .dropdown{
         width: 25%;
         font-size: .8em;
         
-    }
+    } */
    
 
     .VolBox{
@@ -215,10 +216,11 @@ footer{
         margin-bottom: 0;
         }
 
-    .dropdown{
+    /* .dropdown{
         width: 25%;
         font-size: 1em;
-    }
+        
+    } */
     a{
         padding: 0%;
     }
@@ -300,11 +302,11 @@ footer{
     margin-bottom: 0;
     }
 
-    .dropdown{
+    /* .dropdown{
         width: 25%;
         font-size: 1.2em;
         text-align: center;
-    }
+    } */
     a{
         padding: 0%;
     }
