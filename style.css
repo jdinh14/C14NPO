@@ -144,10 +144,10 @@ footer a:hover {
 
 }
 
-main {
 
-    animation: fadeIn 3s;
-}
+main{ 
+    
+    animation: fadeIn 3s;}
 
 @keyframes fadeIn {
     0% {
