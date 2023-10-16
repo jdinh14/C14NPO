@@ -248,8 +248,8 @@ padding: 10px;
   }
  
   html{
-      width: 110%;
-  }
+    font-size: 0.7rem;
+}
 
 
   .langicon img{
