@@ -5,39 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact US</title>
-    <link rel="stylesheet" type="text/css" href="contact2.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="contact.css" rel="stylesheet">
-
+    <script></script>
 </head>
 
 <body>
     <header>
 
-        <a href="../index.html" id="logocenter"><img src="../photos/logo.png" id="logo" alt="website homepage"></a>
+        <a href="index.html" id="logocenter"><img src="logo.png" id="logo" alt="website homepage"></a>
         <!-- Homepage link will be logo -->
         <nav id="navheadercolor">
             <ul>
                 <li class="dropdown">
                     <a href="#">Learn More</a>
                     <ul class="dropdown-content">
-                        <li><a href="../learnmore/learnmore.html">About Us</a></li>
-                        <li><a href="../learnmore/meetteam.html">Meet The Team</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Meet The Team</a></li>
                     </ul>
                 </li>
 
                 <li class="dropdown">
                     <a href="#">Get Involved</a>
                     <ul class="dropdown-content">
-                        <li><a href="../getinvolved/signup.html">Volunteer Sign-Up</a></li>
-                        <li><a href="../getinvolved/workshop.html">Workshops</a></li>
+                        <li><a href="signup.html">Volunteer Sign-Up</a></li>
+                        <li><a href="workshop.html">Workshops</a></li>
                     </ul>
                 </li>
 
                 <li class="dropdown">
                     <a href="#">Resources</a>
                     <ul class="dropdown-content">
-                        <li><a href="../resources/guide.html">Healthcare Guide</a></li>
-                        <li><a href="../resources/partners.html">Healthcare Partners</a></li>
+                        <li><a href="#">Healthcare Guide</a></li>
+                        <li><a href="#">Healthcare Partners</a></li>
                         <!-- Link pdf? -->
                     </ul>
                 </li>
@@ -45,8 +45,8 @@
                 <li class="dropdown">
                     <a href="#">News</a>
                     <ul class="dropdown-content">
-                        <li><a href="../news/news.html">Impact Stories</a></li>
-                        <li><a href="../news/calendar.html">Event Calendar</a></li>
+                        <li><a href="news.html">Impact Stories</a></li>
+                        <li><a href="calendar.html">Event Calendar</a></li>
 
                     </ul>
                 </li>
@@ -54,7 +54,8 @@
                 <li class="dropdown">
                     <a href="#">Contact Us</a>
                     <ul class="dropdown-content">
-                        <li><a href="../contact/contact.html">Contact Information</a></li>
+                        <li><a href="contact.html">Contact Information</a></li>
+                        <li><a href="social.html">Social Media</a></li>
 
                     </ul>
                 </li>
@@ -63,7 +64,6 @@
 
 
     </header>
-
 
     <main>
         <section class="content">
@@ -86,6 +86,11 @@
             </form>
         </section>
     </main>
+
+
+
+
+
     <footer>
 
 
@@ -109,56 +114,43 @@
 
                 <h2>Learn More</h2>
                 <ul class="#">
-                    <li><a href="../learnmore/learnmore.html">About Us</a></li>
-                    <li><a href="../learnmore/meetteam.html">Meet The Team</a></li>
+                    <li><a href="learnmore.html">About Us</a></li>
+                    <li><a href="meetteam.css">Meet The Team</a></li>
                 </ul>
 
 
                 <h2>Resource</h2>
                 <ul class="#">
-                    <li><a href="../resources/guide.html">Healthcare Guide</a></li>
-                    <li><a href="../resources/partners.html">Healthcare Partners</a></li>
+                    <li><a href="guide.html">Healthcare Guide</a></li>
+                    <li><a href="partners.html">Healthcare Partners</a></li>
                 </ul>
 
                 <h2>News</h2>
                 <ul class="#">
-                    <li><a href="../news/news.html">Impactful Stories</a></li>
-                    <li><a href="../news/calendar.html">Calendar</a></li>
+                    <li><a href="news.css">Impactful Stories</a></li>
+                    <li><a href="calendar.css">Calendar</a></li>
                 </ul>
-
-                <h2>Language</h2>
-                <section>
-                    <a href="#" class="langicon">
-                        <img src="../photos/engicon.png" alt="English">
-                    </a>
-
-                    <a href="spa-contact.html" class="langicon">
-                        <img src="../photos/spaicon.png" alt="Spanish">
-                    </a>
-                </section>
 
             </article>
 
             <article class="contact-info">
                 <h2>Contact Us</h2>
                 <ul class="#">
-                    <li><a href="../contact/contact.html">Contact Information</a></li>
-                    <li>
-                        <h3>Social Media</h2>
-                    </li>
+                    <li><a href="contact.html">Contact Information</a></li>
+                    <li><a href="social.html">
+                            <h3>Social Media</h2>
+                        </a></li>
 
                     <div class="social-media-icons">
                         <a href="www.facebook.com" target="_blank" title="Follow us on Facebook">
-                            <img src="../photos/fbicon.svg" alt="Facebook Icon">
+                            <img src="fbicon.svg" alt="Facebook Icon">
                         </a>
                         <a href="www.instagram.com" target="_blank" title="Follow us on Instagram">
-                            <img src="../photos/igicon.svg" alt="Instagram Icon">
+                            <img src="igicon.svg" alt="Instagram Icon">
                         </a>
                         <a href="www.twitter.com" target="_blank" title="Follow us on Twitter">
-                            <img src="../photos/twicon.svg" alt="Twitter Icon">
+                            <img src="twicon.svg" alt="Twitter Icon">
                         </a>
-
-
 
 
                     </div>
@@ -192,18 +184,13 @@
 
         <p>&copy; 2023 Road to Healthcare. All rights reserved.</p>
     </footer>
-    <script src="../script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 <script>
     var userEmail = document.myForm.userEmail.value;
-    function isEmail() {
-        // const email = document.getElementById("userEmail");
-
-        const regexx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 
-    }
 
     function validator() {
         var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z.0-9-]+)*$/;
@@ -240,17 +227,6 @@
         } else {
             alert(document.myForm.userEmail.value + ' Email is not valid');
         }
-        // if (!isEmail(userEmail)) {
-        //     alert(document.myForm.userEmail.value + " is not valid email");
-        //     return false;
-        // } 
-        // if (document.myForm.userEmail.value.match(validRegex)) {
-        //     alert("Passed");
-        // } else {
-        //     alert(document.myForm.userEmail.value + " is not valid email");
-        //     return false;
-
-        // }
 
         return (true);
 
