@@ -247,9 +247,11 @@ main{
 /* phone accessibility  */
 @media screen and (max-width: 375px) {
 
-body, .footer ul {
-font-size: 10px;
+body {
+font-size: 0.6rem;
 }
+
+
 
 #logo {
 width: 100px;
@@ -266,7 +268,7 @@ width: 150px;
 
 }
 
-p {
+#margincontainer p {
 font-size: 10px;
 }
 
@@ -300,7 +302,7 @@ height: 240px;
 width: 240px; 
 }
 
-p {
+.maincontainer p {
 font-size: 18.5px;
 }
         
@@ -318,7 +320,7 @@ height: 90%;
 
 @media screen and (max-width: 820px) {
 
-p {
+.maincontainer p {
 font-size: 21px;
 }
 }

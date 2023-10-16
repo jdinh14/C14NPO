@@ -1,12 +1,4 @@
-/* * {
-    margin: 0px;
-    padding: 0px;
-}
-    
-    html {
-    height: 100%;
-    width: 100%;
-} */
+
   
 #logo{
     width: 12%;
@@ -112,12 +104,7 @@ nav li:hover > a {
  
 .imgcontainer {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* grid-template-columns: repeat(2, 1fr); */
-    /* grid-template-rows: repeat(2, 1fr); */
-
-    /* grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: auto;  */
+ 
     gap: 15px 15px; 
     align-items: center;
     /* grid-gap: 10px; */
@@ -246,7 +233,7 @@ main{
 
 @media screen and (max-width: 375px) {
 
-    nav, nav li, nav ul, body {
+    /* nav, nav li, nav ul, body {
         display: inline-flex;
         width: 100vw;
         flex-wrap: wrap;
@@ -289,11 +276,18 @@ main{
         justify-content: center;
     }
     }
-    
+     */
     /* tablet accessibility */
     
     @media screen and (max-width: 820px) {
-    
+
+        .imgcontainer{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 15px;
+            grid-auto-flow: row;
+        }
+/*     
     #logo {
         width: 300px;
         height: 300px;
@@ -327,14 +321,14 @@ main{
         
     footer, footer ul, footer li, .grid {
         font-size: 20px;
-    }
+    } */
     }
     
     /* desktop accessibility */
     
     @media screen and (max-width: 820px) {
     
-    html {
+    /* html {
             height: 95%;
             width: 95%;
     }
@@ -390,6 +384,12 @@ main{
     
     footer, footer ul, footer li, .grid {
         font-size: 8px;
+    } */
+    .imgcontainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        grid-auto-flow: row;
     }
     
     }
