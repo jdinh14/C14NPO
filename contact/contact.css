@@ -166,11 +166,13 @@ form input[type="submit"] {
     border: solid wheat 20px;
 }
 
+
 @media (max-width: 400px) {
     nav a {
         font-size: 0.7rem;
         text-align: center;
     }
+
 
     .date {
         font-size: 1rem;
@@ -182,8 +184,8 @@ form input[type="submit"] {
     }
 
     img {
-        width: 150px;
-        height: 100px;
+        width: 20px;
+        height: 20px;
     }
 
     .newspage h3 {
@@ -192,6 +194,10 @@ form input[type="submit"] {
 
     section {
         font: 12px;
+    }
+
+    article .contact-info {
+        padding: none;
     }
 
     .myForm,
@@ -238,11 +244,19 @@ form input[type="submit"] {
         background-color: #333;
         color: white;
     }
+
+
+
 }
 
 @media (min-width: 401px) and (max-width: 800px) {
     nav a {
         text-align: center;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
     }
 
     .date {
