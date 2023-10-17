@@ -2,15 +2,14 @@
 Welcome to the README file for our non-profit organization. This README provides essential information about our organization and how to get involved.
 
 
-##Project Overview
-
-##Features
-
-##Usage Guide
-
-## Mission
-
+## Project Overview
 Our mission is to make healthcare more accessible to immigrants. We aim to aid them by giving them adequate information and providing resources which they can utilize.
+
+## Features
+Form Validation, user email, responsive layout at multiple breakpoints, 
+
+## Usage Guide
+
 
 ## Programs
 
